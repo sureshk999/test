@@ -1,5 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+export default {
     async headers() {
       return [
         {
@@ -14,7 +13,7 @@ const nextConfig = {
         },
         {
           // Match all images
-          source: '/:path*',
+          source: '/uploads/:path*',
           headers: [
             {
               key: 'Cache-Control',
@@ -45,6 +44,4 @@ const nextConfig = {
       ];
     },
   };
-  
-  module.exports = nextConfig;
   
