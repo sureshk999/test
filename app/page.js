@@ -11,6 +11,16 @@ export default function Home() {
         height={300}
         priority
       />
+
+<Image
+        src="/uploads/default.jpg"
+        alt="Default Image"
+        width={400}
+        height={300}
+        priority
+      />
+
+
     </div>
   );
 }
